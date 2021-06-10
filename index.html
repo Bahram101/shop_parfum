@@ -6,53 +6,127 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Parfum - main page</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.carousel.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 
 <header>
-    <div class="header__top">
-        <div class="header-top__container">
-            <div class="subscribe">
-                <a href=""><img src="./img/subs-icon.png" alt="иконка подписки">Подписаться на акции</a>
+    <div class="header-top">
+        <div class="subscribe">
+            <a href=""><img src="./img/subs-icon.png" alt="иконка подписки">Подписаться на акции</a>
+        </div>
+        <div class="menu-top">
+            <ul class="menu">
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Доставка и оплата</a></li>
+                <li><a href="#">Отзывы </a></li>
+                <li><a href="#">Вопросы и ответы</a></li>
+                <li><a href="#">Акции</a></li>
+            </ul>
+            <div class="menu-top__item">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                    </svg>
+                </a>
             </div>
-            <div class="menu-top">
-                <ul class="menu">
-                    <li><a href="#">О нас</a></li>
-                    <li><a href="#">Контакты</a></li>
-                    <li><a href="#">Доставка и оплата</a></li>
-                    <li><a href="#">Отзывы </a></li>
-                    <li><a href="#">Вопросы и ответы</a></li>
-                    <li><a href="#">Акции</a></li>
+            <div class="menu-top__item">
+                <a href="#" class="bag">
+                    <svg xmlns="http://www.w3.org/2000/svg"  width="20" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"  />
+                    </svg>
+                </a>
+            </div>
+            <div class="menu-top__item">
+                <a href="#">Регистрация</a>
+            </div>
+            <div class="menu-top__item">
+                <a href="#"><i class="far fa-user fa-2x"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-middle">
+        <div class="header-middle__top d-flex justify-content-between">
+            <div class="header-left d-flex">
+                <div class="header-logo">
+                    <a href="#"><img src="./img/logo_odeharm.png"></a>
+                </div>
+                <div class="header-search">
+                    <form action="#" method="post">
+                        <input type="text" class="search" placeholder="Поиск по сайту">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="header-right d-flex">
+                <ul class="social-icons d-flex">
+                    <li class="telegram"><a href="#">Telegram</a></li>
+                    <li class="whatsapp"><a href="#">Whatsapp</a></li>
+                    <li class="viber"><a href="#">Viber</a></li>
                 </ul>
-                <div class="menu-top__item">
-                    <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                        </svg>
-                    </a>
-                </div>
-                <div class="menu-top__item">
-                    <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" width="" />
-                        </svg>
-                    </a>
-                </div>
-                <div class="menu-top__item">
-                    <a href="#">Регистрация</a>
-                </div>
-                <div class="menu-top__item">
-                    <a href="#"><i class="far fa-user fa-2x"></i></a>
+                <div class="phone">
+                    <a href="tel:8 (3022) 22-47-78">8 (3022) 22-47-78</a>
+                    <a href="" class="callMe">Закажите звонок</a>
                 </div>
             </div>
         </div>
-
+        <div class="header-middle__bottom">
+            <div class="menu-bottom d-flex justify-content-center">
+                <ul class="d-flex">
+                    <li><a href="">Бренды</a></li>
+                    <li><a href="">Парфюмерия</a></li>
+                    <li><a href="">Волосы</a></li>
+                    <li><a href="">Тело</a></li>
+                    <li><a href="">Лицо</a></li>
+                    <li><a href="">Макияж</a></li>
+                    <li><a href="">Ногти</a></li>
+                    <li><a href="">Детям</a></li>
+                    <li><a href="">Мужчинам</a></li>
+                    <li><a href="">Другое</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
-    <div class="header__center"></div>
-    <div class="header__bottom"></div>
+
+    <div class="header-bottom">
+        <div class="slider-inner">
+            <div class="header-sliders owl-carousel owl-theme">
+                <div class="item">
+                    <img src="./img/slide1.jpg" alt="слайдер">
+                </div>
+                <div class="item">
+                    <img src="./img/slide1.jpg" alt="слайдер">
+                </div>
+                <div class="item">
+                    <img src="./img/slide1.jpg" alt="слайдер">
+                </div>
+            </div>
+        </div>
+    </div>
 </header>
 
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+<script src="node_modules/owl.carousel/dist/owl.carousel.js/"></script>
+<script>
+    $('.header-sliders').owlCarousel({
+        loop:false,
+        margin:10,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            }
+        }
+    })
+</script>
 </body>
 </html>
