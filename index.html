@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
     <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.carousel.css">
+    <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.theme.default.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -112,21 +113,22 @@
 
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
-<script src="node_modules/owl.carousel/dist/owl.carousel.js/"></script>
+<script src="node_modules/owl.carousel/dist/owl.carousel.js"></script>
 <script>
+
     $('.header-sliders').owlCarousel({
-        loop:false,
+        // loop:true,
+        dots:true,
         margin:10,
-        nav:true,
         responsive:{
             0:{
                 items:1
-            },
-            600:{
-                items:3
             }
+
         }
-    })
+    });
+
+
 </script>
 </body>
 </html>

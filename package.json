@@ -10,8 +10,11 @@
   "license": "ISC",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
+    "add": "^2.0.6",
     "bootstrap": "^5.0.1",
     "jquery": "^3.6.0",
-    "owl.carousel": "^2.3.4"
+    "or": "^0.2.0",
+    "owl.carousel": "^2.3.4",
+    "yarn": "^1.22.10"
   }
 }
