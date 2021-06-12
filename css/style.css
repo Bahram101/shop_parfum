@@ -246,27 +246,33 @@ header .header-bottom .header-sliders .owl-dots .active span {
   position: relative;
 }
 
-section .section-title {
+section .container {
+  position: relative;
+}
+section .container .section-title {
   text-align: center;
   font-family: "Yanone Kaffeesatz", ExtraLight;
   text-transform: uppercase;
   margin-bottom: 35px;
 }
-section .section-title .border-b {
+section .container .section-title .border-b {
   padding: 0 25px;
   border-bottom: 13px solid #fee5ea;
   display: inline-block;
 }
-section .section-title .border-b h1 {
+section .container .section-title .border-b h1 {
   position: relative;
   bottom: -28px;
 }
-section .products {
+section .container .products {
   border-bottom: 1px solid #dedede;
   padding-bottom: 25px;
   position: relative;
 }
-section .products:after {
+section .container .products .owl-stage-outer {
+  padding-bottom: 10px;
+}
+section .container .products:after {
   content: "";
   position: absolute;
   width: 80%;
@@ -280,7 +286,7 @@ section .products:after {
           box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
   z-index: -1;
 }
-section .products:before {
+section .container .products:before {
   content: "";
   position: absolute;
   width: 100%;
@@ -289,10 +295,10 @@ section .products:before {
   background: white;
   z-index: 1;
 }
-section .products .product {
+section .container .products .product {
   padding: 20px;
 }
-section .products .product .product-image {
+section .container .products .product .product-image {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -306,19 +312,19 @@ section .products .product .product-image {
           align-items: flex-end;
   margin-bottom: 40px;
 }
-section .products .product .product-image .sale {
+section .container .products .product .product-image .sale {
   position: absolute;
   left: 0;
   top: 0;
 }
-section .products .product .product-image svg {
+section .container .products .product .product-image svg {
   position: absolute;
   left: 0;
   bottom: -8px;
   color: #C5C5C5;
   visibility: hidden;
 }
-section .products .product .product-image .zoom {
+section .container .products .product .product-image .zoom {
   position: absolute;
   right: 0;
   bottom: -8px;
@@ -329,17 +335,17 @@ section .products .product .product-image .zoom {
   border-radius: 50%;
   visibility: hidden;
 }
-section .products .product .brand {
+section .container .products .product .brand {
   font-family: "Open Sans Regular";
   font-size: 14px;
   color: #929292;
   text-transform: uppercase;
 }
-section .products .product .title {
+section .container .products .product .title {
   font-size: 14px;
   margin-top: 7px;
 }
-section .products .product .price {
+section .container .products .product .price {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -351,25 +357,25 @@ section .products .product .price {
       -ms-flex-align: center;
           align-items: center;
 }
-section .products .product .price .price-old {
+section .container .products .product .price .price-old {
   font-family: "Open Sans SemiBold";
   font-size: 16px;
   color: #252525;
 }
-section .products .product .price .price-old .fas {
+section .container .products .product .price .price-old .fas {
   font-size: 15px;
   margin-right: 3px;
 }
-section .products .product .price .price-new {
+section .container .products .product .price .price-new {
   font-family: "Open Sans SemiBold";
   font-size: 19px;
   color: #ff1919;
 }
-section .products .product .price .price-new .fas {
+section .container .products .product .price .price-new .fas {
   font-size: 16px;
   margin-right: 4px;
 }
-section .products .product .price .cart {
+section .container .products .product .price .cart {
   font-size: 14px;
   font-family: "Open Sans SemiBold";
   background: #e22d71;
@@ -377,10 +383,10 @@ section .products .product .price .cart {
   padding: 10px;
   visibility: hidden;
 }
-section .products .product .price .cart svg {
+section .container .products .product .price .cart svg {
   margin-right: 10px;
 }
-section .products .product .images {
+section .container .products .product .images {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -390,7 +396,7 @@ section .products .product .images {
   margin-top: 15px;
   visibility: hidden;
 }
-section .products .product .images .image {
+section .container .products .product .images .image {
   border: 1px solid #e4e4e4;
   width: 30%;
   max-height: 80px;
@@ -404,14 +410,14 @@ section .products .product .images .image {
       -ms-flex-pack: center;
           justify-content: center;
 }
-section .products .product .images .image img {
+section .container .products .product .images .image img {
   max-width: 100%;
 }
-section .products .product:hover {
+section .container .products .product:hover {
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.12);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.12);
 }
-section .products .all-sales {
+section .container .all-sales {
   background: #feb742;
   padding: 11px;
   text-align: center;
@@ -425,7 +431,7 @@ section .products .all-sales {
   -webkit-box-shadow: 0 8px 15px rgba(0, 0, 0, 0.12);
           box-shadow: 0 8px 15px rgba(0, 0, 0, 0.12);
 }
-section .products .all-sales a {
+section .container .all-sales a {
   color: white;
 }
 

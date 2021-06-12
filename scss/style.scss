@@ -226,143 +226,149 @@ header{
 }
 
 section{
-    .section-title{
-        text-align: center;
-        font-family: 'Yanone Kaffeesatz', ExtraLight;
-        text-transform: uppercase;
-        margin-bottom: 35px;
-        .border-b{
-            padding: 0 25px;
-            border-bottom: 13px solid #fee5ea;
-            display: inline-block;
-            h1{
-                position: relative;
-                bottom: -28px;
-            }
-        }
-    }
-    .products{
-        border-bottom: 1px solid #dedede;
-        padding-bottom: 25px;
+    .container{
         position: relative;
-        &:after{
-            content: "";
-            position: absolute;
-            width: 80%;
-            height: 20px;
-            border-radius: 50%;
-            bottom: 5px;
-            left: 50%;
-            transform: translate(-50%);
-            box-shadow: 0 10px 10px rgb(0 0 0 / 10%);
-            z-index: -1;
+        .section-title{
+            text-align: center;
+            font-family: 'Yanone Kaffeesatz', ExtraLight;
+            text-transform: uppercase;
+            margin-bottom: 35px;
+            .border-b{
+                padding: 0 25px;
+                border-bottom: 13px solid #fee5ea;
+                display: inline-block;
+                h1{
+                    position: relative;
+                    bottom: -28px;
+                }
+            }
         }
-        &:before{
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 20px;
-            bottom: 0;
-            background: white;
-            z-index: 1;
-        }
-        .product{
-            padding: 20px;
-            .product-image{
-                position: relative;
-                display: flex;
-                justify-content: center;
-                height: 280px;
-                align-items: flex-end;
-                margin-bottom: 40px;
-                .sale{
-                    position:absolute;
-                    left:0;
-                    top: 0;
-                }
-                svg{
-                    position:absolute;
-                    left:0;
-                    bottom:-8px;
-                    color:#C5C5C5;
-                    visibility:hidden;
-                }
-                .zoom{
-                    position:absolute;
-                    right:0;
-                    bottom:-8px;
-                    font-size:18px;
-                    color:#908C8C;
-                    background: #FBEDEF;
-                    padding: 5px;
-                    border-radius: 50%;
-                    visibility:hidden;
-                }
+        .products{
+            border-bottom: 1px solid #dedede;
+            padding-bottom: 25px;
+            position: relative;
+            .owl-stage-outer{
+                padding-bottom: 10px;
             }
-            .brand{
-                font-family: 'Open Sans Regular';
-                font-size: 14px;
-                color:#929292;
-                text-transform: uppercase;
+            &:after{
+                content: "";
+                position: absolute;
+                width: 80%;
+                height: 20px;
+                border-radius: 50%;
+                bottom: 5px;
+                left: 50%;
+                transform: translate(-50%);
+                box-shadow: 0 10px 10px rgb(0 0 0 / 10%);
+                z-index: -1;
             }
-            .title{
-                font-size: 14px;
-                margin-top:7px;
+            &:before{
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 20px;
+                bottom: 0;
+                background: white;
+                z-index: 1;
             }
-            .price{
-                display: flex;
-                margin-top: 12px;
-                justify-content: space-between;
-                align-items: center;
-                .price-old{
-                    font-family: 'Open Sans SemiBold';
-                    font-size: 16px;
-                    color:#252525;
-                    .fas{
-                        font-size: 15px;
-                        margin-right: 3px;
-                    }
-                }
-                .price-new{
-                    font-family: 'Open Sans SemiBold';
-                    font-size: 19px;
-                    color:#ff1919;
-                    .fas{
-                        font-size: 16px;
-                        margin-right: 4px;
-                    }
-                }
-                .cart{
-                    font-size: 14px;
-                    font-family: 'Open Sans SemiBold';
-                    background: #e22d71;
-                    color: white;
-                    padding: 10px;
-                    visibility: hidden;
-                    svg{
-                        margin-right: 10px;
-                    }
-                }
-            }
-            .images{
-                display: flex;
-                justify-content:space-between;
-                margin-top:15px;
-                visibility: hidden;
-                .image{
-                    border: 1px solid #e4e4e4;
-                    width: 30%;
-                    max-height:80px;
+            .product{
+                padding: 20px;
+                .product-image{
+                    position: relative;
                     display: flex;
-                    align-items: center;
                     justify-content: center;
-                    img{
-                        max-width: 100%;
+                    height: 280px;
+                    align-items: flex-end;
+                    margin-bottom: 40px;
+                    .sale{
+                        position:absolute;
+                        left:0;
+                        top: 0;
+                    }
+                    svg{
+                        position:absolute;
+                        left:0;
+                        bottom:-8px;
+                        color:#C5C5C5;
+                        visibility:hidden;
+                    }
+                    .zoom{
+                        position:absolute;
+                        right:0;
+                        bottom:-8px;
+                        font-size:18px;
+                        color:#908C8C;
+                        background: #FBEDEF;
+                        padding: 5px;
+                        border-radius: 50%;
+                        visibility:hidden;
                     }
                 }
-            }
-            &:hover{
-                box-shadow: 0 0 10px rgba(0 0 0 / 12%);
+                .brand{
+                    font-family: 'Open Sans Regular';
+                    font-size: 14px;
+                    color:#929292;
+                    text-transform: uppercase;
+                }
+                .title{
+                    font-size: 14px;
+                    margin-top:7px;
+                }
+                .price{
+                    display: flex;
+                    margin-top: 12px;
+                    justify-content: space-between;
+                    align-items: center;
+                    .price-old{
+                        font-family: 'Open Sans SemiBold';
+                        font-size: 16px;
+                        color:#252525;
+                        .fas{
+                            font-size: 15px;
+                            margin-right: 3px;
+                        }
+                    }
+                    .price-new{
+                        font-family: 'Open Sans SemiBold';
+                        font-size: 19px;
+                        color:#ff1919;
+                        .fas{
+                            font-size: 16px;
+                            margin-right: 4px;
+                        }
+                    }
+                    .cart{
+                        font-size: 14px;
+                        font-family: 'Open Sans SemiBold';
+                        background: #e22d71;
+                        color: white;
+                        padding: 10px;
+                        visibility: hidden;
+                        svg{
+                            margin-right: 10px;
+                        }
+                    }
+                }
+                .images{
+                    display: flex;
+                    justify-content:space-between;
+                    margin-top:15px;
+                    visibility: hidden;
+                    .image{
+                        border: 1px solid #e4e4e4;
+                        width: 30%;
+                        max-height:80px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        img{
+                            max-width: 100%;
+                        }
+                    }
+                }
+                &:hover{
+                    box-shadow: 0 0 10px rgba(0 0 0 / 12%);
+                }
             }
         }
         .all-sales{
@@ -382,10 +388,8 @@ section{
 
         }
     }
+
 }
 .owl-carousel .owl-item img{
     width:unset;
-}
-#sale{
-
 }
