@@ -252,11 +252,19 @@ section .section-title {
   text-transform: uppercase;
   margin-bottom: 35px;
 }
+section .section-title .border-b {
+  padding: 0 25px;
+  border-bottom: 13px solid #fee5ea;
+  display: inline-block;
+}
+section .section-title .border-b h1 {
+  position: relative;
+  bottom: -28px;
+}
 section .products {
   border-bottom: 1px solid #dedede;
-  padding-bottom: 20px;
+  padding-bottom: 25px;
   position: relative;
-  background: #fff;
 }
 section .products:after {
   content: "";
@@ -271,6 +279,15 @@ section .products:after {
   -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
           box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
   z-index: -1;
+}
+section .products:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  bottom: 0;
+  background: white;
+  z-index: 1;
 }
 section .products .product {
   padding: 20px;
@@ -299,8 +316,9 @@ section .products .product .product-image svg {
   left: 0;
   bottom: -8px;
   color: #C5C5C5;
+  visibility: hidden;
 }
-section .products .product .product-image .fa-search {
+section .products .product .product-image .zoom {
   position: absolute;
   right: 0;
   bottom: -8px;
@@ -309,6 +327,7 @@ section .products .product .product-image .fa-search {
   background: #FBEDEF;
   padding: 5px;
   border-radius: 50%;
+  visibility: hidden;
 }
 section .products .product .brand {
   font-family: "Open Sans Regular";
@@ -356,6 +375,7 @@ section .products .product .price .cart {
   background: #e22d71;
   color: white;
   padding: 10px;
+  visibility: hidden;
 }
 section .products .product .price .cart svg {
   margin-right: 10px;
@@ -377,6 +397,9 @@ section .products .product .images .image {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -390,4 +413,22 @@ section .products .product:hover {
 }
 section .products .all-sales {
   background: #feb742;
+  padding: 11px;
+  text-align: center;
+  display: inline-block;
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  bottom: 60px;
+  z-index: -1;
+  -webkit-box-shadow: 0 8px 15px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 8px 15px rgba(0, 0, 0, 0.12);
+}
+section .products .all-sales a {
+  color: white;
+}
+
+.owl-carousel .owl-item img {
+  width: unset;
 }
