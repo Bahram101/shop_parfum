@@ -12,7 +12,7 @@ a {
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans Regular", sans-serif;
 }
 
 header .header-top {
@@ -223,6 +223,7 @@ header .header-middle .header-middle__bottom .menu-bottom ul li a {
   color: #000;
   font-size: 15px;
   text-transform: uppercase;
+  font-family: "Open Sans SemiBold";
 }
 header .header-bottom .header-sliders .owl-dots {
   position: relative;
@@ -265,6 +266,10 @@ section .products .product .product-image {
       -ms-flex-pack: center;
           justify-content: center;
   height: 280px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 40px;
 }
 section .products .product .product-image .sale {
   position: absolute;
@@ -277,13 +282,76 @@ section .products .product .product-image svg {
 section .products .product .product-image .zoom {
   position: absolute;
 }
+section .products .product .brand {
+  font-family: "Open Sans Regular";
+  font-size: 14px;
+  color: #929292;
+  text-transform: uppercase;
+}
+section .products .product .title {
+  font-size: 14px;
+  margin-top: 7px;
+}
 section .products .product .price {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 12px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+section .products .product .price .price-old {
+  font-family: "Open Sans SemiBold";
+  font-size: 16px;
+  color: #252525;
+}
+section .products .product .price .price-old .fas {
+  font-size: 15px;
+  margin-right: 3px;
+}
+section .products .product .price .price-new {
+  font-family: "Open Sans SemiBold";
+  font-size: 19px;
+  color: #ff1919;
+}
+section .products .product .price .price-new .fas {
+  font-size: 16px;
+  margin-right: 4px;
+}
+section .products .product .price .cart {
+  font-size: 14px;
+  font-family: "Open Sans SemiBold";
+  background: #e22d71;
+  color: white;
+  padding: 10px;
+}
+section .products .product .price .cart svg {
+  margin-right: 10px;
 }
 section .products .product .images {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 15px;
+}
+section .products .product .images .image {
+  border: 1px solid #e4e4e4;
+  width: 30%;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+section .products .product .images .image img {
+  max-width: 100%;
 }

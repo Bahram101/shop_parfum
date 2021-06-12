@@ -12,7 +12,7 @@ a{
 }
 
 body{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans Regular', sans-serif;
 }
 
 header{
@@ -188,7 +188,7 @@ header{
                             color:#000;
                             font-size: 15px;
                             text-transform: uppercase;
-                            //font-family: 'Open Sans SemiBold';
+                            font-family: 'Open Sans SemiBold';
                         }
                     }
                 }
@@ -241,6 +241,8 @@ section{
                 display: flex;
                 justify-content: center;
                 height: 280px;
+                align-items: flex-end;
+                margin-bottom: 40px;
                 .sale{
                     position:absolute;
                     left:0;
@@ -254,11 +256,66 @@ section{
                 }
 
             }
+            .brand{
+                font-family: 'Open Sans Regular';
+                font-size: 14px;
+                color:#929292;
+                text-transform: uppercase;
+            }
+            .title{
+                font-size: 14px;
+                margin-top:7px;
+            }
             .price{
                 display: flex;
+                margin-top: 12px;
+                justify-content: space-between;
+                align-items: center;
+                .price-old{
+                    font-family: 'Open Sans SemiBold';
+                    font-size: 16px;
+                    color:#252525;
+                    .fas{
+                        font-size: 15px;
+                        margin-right: 3px;
+                    }
+                }
+                .price-new{
+                    font-family: 'Open Sans SemiBold';
+                    font-size: 19px;
+                    color:#ff1919;
+                    .fas{
+                        font-size: 16px;
+                        margin-right: 4px;
+                    }
+                }
+                .cart{
+                    font-size: 14px;
+                    font-family: 'Open Sans SemiBold';
+                    background: #e22d71;
+                    color: white;
+                    padding: 10px;
+                    svg{
+                        margin-right: 10px;
+                    }
+                }
             }
             .images{
                 display: flex;
+                justify-content:space-between;
+                margin-top:15px;
+                .image{
+                    border: 1px solid #e4e4e4;
+                    width: 30%;
+                    height:80px;
+                    display: flex;
+                    //align-items: center;
+                    justify-content: center;
+                    img{
+                        max-width: 100%;
+                    }
+
+                }
             }
         }
     }
