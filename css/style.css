@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -67,7 +67,7 @@ header .header-top .menu-top .menu li {
 header .header-top .menu-top .menu li a {
   color: #efefef;
   font-size: 13px;
-  font-family: "Open Sans SemiBold";
+  font-family: "Open Sans SemiBold", sans-serif;
   text-transform: uppercase;
 }
 header .header-top .menu-top .menu-top__item {
@@ -202,7 +202,7 @@ header .header-middle .header-middle__top .header-right .phone {
 }
 header .header-middle .header-middle__top .header-right .phone a {
   font-size: 24px;
-  font-family: "Open Sans SemiBold";
+  font-family: "Open Sans SemiBold", sans-serif;
   color: #000;
 }
 header .header-middle .header-middle__top .header-right .phone .callMe {
@@ -210,10 +210,80 @@ header .header-middle .header-middle__top .header-right .phone .callMe {
   color: #FB778E;
   text-decoration: underline;
 }
+header .header-middle .header-middle__bottom .menu-bottom ul {
+  padding-left: 0;
+  margin-bottom: 8px !important;
+  margin-top: 8px;
+}
+header .header-middle .header-middle__bottom .menu-bottom ul li {
+  margin-left: 25px;
+  margin-right: 25px;
+}
 header .header-middle .header-middle__bottom .menu-bottom ul li a {
   color: #000;
   font-size: 15px;
   text-transform: uppercase;
-  font-family: "Open Sans SemiBold";
-  margin-right: 50px;
+}
+header .header-bottom .header-sliders .owl-dots {
+  position: relative;
+  bottom: 65px;
+}
+header .header-bottom .header-sliders .owl-dots .owl-dot span {
+  width: 12px;
+  height: 12px;
+  background: none;
+  border: 2px solid white;
+  border-radius: unset;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+header .header-bottom .header-sliders .owl-dots .active span {
+  background: white;
+  width: 14px;
+  height: 14px;
+  top: 1px;
+  position: relative;
+}
+
+section .section-title {
+  text-align: center;
+  font-family: "Yanone Kaffeesatz", ExtraLight;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+}
+section .products .product {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.12);
+  padding: 20px;
+}
+section .products .product .product-image {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 280px;
+}
+section .products .product .product-image .sale {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+section .products .product .product-image svg {
+  position: absolute;
+}
+section .products .product .product-image .zoom {
+  position: absolute;
+}
+section .products .product .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+section .products .product .images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
