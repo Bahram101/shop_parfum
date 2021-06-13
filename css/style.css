@@ -279,8 +279,8 @@ section .container .products:after {
   left: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
-  -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 10px 10px rgba(0, 0, 0, 0.12);
   z-index: -1;
 }
 section .container .products:before {
@@ -457,7 +457,7 @@ section .container .all-sales {
   position: absolute;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
-  bottom: 60px;
+  bottom: 80px;
   z-index: 1;
   -webkit-box-shadow: 0 8px 15px rgba(0, 0, 0, 0.12);
           box-shadow: 0 8px 15px rgba(0, 0, 0, 0.12);
@@ -466,11 +466,19 @@ section .container .all-sales a {
   color: white;
 }
 
-#new-products {
+#new-products,
+#leader-products,
+#discount-products {
   padding-top: 25px;
 }
-#new-products .product .price .price-new {
+#new-products .product .price .price-new,
+#leader-products .product .price .price-new,
+#discount-products .product .price .price-new {
   color: #000;
+}
+
+#whyWeAre {
+  padding-top: 25px;
 }
 
 .owl-carousel .owl-item img {

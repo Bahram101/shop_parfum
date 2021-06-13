@@ -256,7 +256,7 @@ section{
                 bottom: 5px;
                 left: 50%;
                 transform: translate(-50%);
-                box-shadow: 0 10px 10px rgb(0 0 0 / 10%);
+                box-shadow: 0 10px 10px rgb(0 0 0 / 12%);
                 z-index: -1;
             }
             &:before{
@@ -408,7 +408,7 @@ section{
             left: 50%;
             position: absolute;
             transform: translate(-50%);
-            bottom: 60px;
+            bottom: 80px;
             z-index: 1;
             box-shadow:0 8px 15px rgba(0 0 0 / 12%);
             a{
@@ -419,7 +419,11 @@ section{
     }
 }
 
-#new-products{
+
+
+#new-products,
+#leader-products,
+#discount-products{
     padding-top:25px;
     .product{
         .price{
@@ -429,6 +433,10 @@ section{
         }
     }
 }
+#whyWeAre{
+    padding-top:25px;
+}
+
 
 .owl-carousel {
     .owl-item img{
