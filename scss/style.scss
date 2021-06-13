@@ -417,7 +417,17 @@ section{
 
         }
     }
+}
 
+#new-products{
+    padding-top:25px;
+    .product{
+        .price{
+            .price-new{
+                color:#000;
+            }
+        }
+    }
 }
 
 .owl-carousel {

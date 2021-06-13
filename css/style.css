@@ -466,6 +466,13 @@ section .container .all-sales a {
   color: white;
 }
 
+#new-products {
+  padding-top: 25px;
+}
+#new-products .product .price .price-new {
+  color: #000;
+}
+
 .owl-carousel .owl-item img {
   width: unset;
 }
