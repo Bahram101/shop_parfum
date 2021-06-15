@@ -424,17 +424,49 @@ section{
 #new-products,
 #leader-products,
 #discount-products{
-    padding-top:25px;
-    .product{
-        .price{
-            .price-new{
-                color:#000;
+    .products{
+        padding-top:25px;
+        border-bottom:none;
+        &:after, &:before{
+            content:none;
+        }
+        .product{
+            .price{
+                .price-new{
+                    color:#000;
+                }
             }
         }
     }
 }
 #whyWeAre{
-    padding-top:25px;
+    .whyWeAre-top{
+        height:310px;
+        background: #EAABB6;
+        .section-title{
+            padding-top: 40px;
+        }
+        .about-us{
+            display: flex;
+            justify-content: space-between;
+            .about-us__item{
+                width:16%;
+                position: relative;
+                top:35px;
+                img{
+                    width:100%;
+                }
+                .title{
+                    margin-top: 35px;
+                    font-family: "Open Sans SemiBold";
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    .whyWeAre-bottom{
+        height:300px;
+    }
 }
 
 

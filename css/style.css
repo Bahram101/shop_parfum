@@ -466,19 +466,55 @@ section .container .all-sales a {
   color: white;
 }
 
-#new-products,
-#leader-products,
-#discount-products {
+#new-products .products,
+#leader-products .products,
+#discount-products .products {
   padding-top: 25px;
+  border-bottom: none;
 }
-#new-products .product .price .price-new,
-#leader-products .product .price .price-new,
-#discount-products .product .price .price-new {
+#new-products .products:after, #new-products .products:before,
+#leader-products .products:after,
+#leader-products .products:before,
+#discount-products .products:after,
+#discount-products .products:before {
+  content: none;
+}
+#new-products .products .product .price .price-new,
+#leader-products .products .product .price .price-new,
+#discount-products .products .product .price .price-new {
   color: #000;
 }
 
-#whyWeAre {
-  padding-top: 25px;
+#whyWeAre .whyWeAre-top {
+  height: 310px;
+  background: #EAABB6;
+}
+#whyWeAre .whyWeAre-top .section-title {
+  padding-top: 40px;
+}
+#whyWeAre .whyWeAre-top .about-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+#whyWeAre .whyWeAre-top .about-us .about-us__item {
+  width: 16%;
+  position: relative;
+  top: 35px;
+}
+#whyWeAre .whyWeAre-top .about-us .about-us__item img {
+  width: 100%;
+}
+#whyWeAre .whyWeAre-top .about-us .about-us__item .title {
+  margin-top: 35px;
+  font-family: "Open Sans SemiBold";
+  font-size: 15px;
+}
+#whyWeAre .whyWeAre-bottom {
+  height: 300px;
 }
 
 .owl-carousel .owl-item img {
