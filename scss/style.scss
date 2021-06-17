@@ -422,14 +422,13 @@ section{
 
 
 #new-products,
-#leader-products,
-#discount-products{
+#leader-products{
     .products{
         padding-top:25px;
-        border-bottom:none;
-        &:after, &:before{
-            content:none;
-        }
+        //border-bottom:none;
+        //&:after, &:before{
+        //    content:none;
+        //}
         .product{
             .price{
                 .price-new{
@@ -437,6 +436,12 @@ section{
                 }
             }
         }
+    }
+}
+
+#discount-products{
+    &:after, &:before{
+        content:none;
     }
 }
 #whyWeAre{
@@ -450,7 +455,8 @@ section{
             display: flex;
             justify-content: space-between;
             .about-us__item{
-                width:16%;
+                //width:16%;
+                width:207px;
                 position: relative;
                 top:35px;
                 img{
@@ -475,4 +481,37 @@ section{
         width: unset;
     }
 
+}
+
+#subscribe{
+    background-image:url(../img/subs-back.png);
+    background-repeat:no-repeat;
+    padding: 45px 0;
+    text-align: center;
+    .section-title{
+        font-family: 'Yanone Kaffeesatz', ExtraLight;
+        text-transform: uppercase;
+        font-size: 32px;
+        margin-bottom: 0;
+    }
+    .desc{
+        margin-bottom: 12px;
+    }
+    form{
+        input{
+            width: 400px;
+            height: 42px;
+            padding: 10px;
+            border: none;
+        }
+        button{
+            border: none;
+            margin-left: 10px;
+            background: #FF2973;
+            color: white;
+            height: 42px;
+            width: 300px;
+            box-shadow: 0 7px 10px 0px rgb(0 0 0 / 12%);
+        }
+    }
 }
