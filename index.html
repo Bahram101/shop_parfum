@@ -727,13 +727,15 @@
 </section>
 
 <section id="subscribe">
-    <div class="container">
-        <div class="section-title">Подписка</div>
-        <div class="desc">Будь в курсе всех новинок, акции и скидок!</div>
-        <form action="" class="subscribe-form">
-            <input type="text" class="subscribe-input" placeholder="Введите e-mail">
-            <button type="submit">Подписаться на рассылку</button>
-        </form>
+    <div class="overlay">
+        <div class="container">
+            <div class="section-title">Подписка</div>
+            <div class="desc">Будь в курсе всех новинок, акции и скидок!</div>
+            <form action="" class="subscribe-form">
+                <input type="text" class="subscribe-input" placeholder="Введите e-mail">
+                <button type="submit">Подписаться на рассылку</button>
+            </form>
+        </div>
     </div>
 </section>
 
@@ -742,7 +744,86 @@
     <div class="container">
         <div class="section-title">
             <div class="border-b">
-                <h1>Товары по скидке</h1>
+                <h1>Наши новости</h1>
+            </div>
+        </div>
+        <div class="discount-products owl-carousel owl-theme">
+            <div class="product">
+                <div class="product-image">
+                    <img src="./img/dis-pro1.png" alt="Парфюмерная вода" class="image">
+                </div>
+                <div class="product-body">
+                    <div class="title">неделя моды в Москве в центральном зале пассажа </div>
+                    <div class="desc">
+                        Для того чтоб поучавствовать в показе мод, вам необходимо...
+                    </div>
+                    <div class="read-more">
+                        <div class="read-more_text">
+                            Читать дальше
+                        </div>
+                        <div class="read-more_icon">
+                            <img src="./img/read-more.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="product">
+                <div class="product-image">
+                    <img src="./img/dis-pro2.png" alt="Парфюмерная вода" class="image">
+                </div>
+                <div class="product-body">
+                    <div class="title">неделя моды в Москве в центральном зале пассажа </div>
+                    <div class="desc">
+                        Для того чтоб поучавствовать в показе мод, вам необходимо...
+                    </div>
+                    <div class="read-more ">
+                        <div class="read-more_text">
+                            Читать дальше
+                        </div>
+                        <div class="read-more_icon">
+                            <img src="./img/read-more.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product-image">
+                    <img src="./img/dis-pro3.png" alt="Парфюмерная вода" class="image">
+                </div>
+                <div class="product-body">
+                    <div class="title">неделя моды в Москве в центральном зале пассажа </div>
+                    <div class="desc">
+                        Для того чтоб поучавствовать в показе мод, вам необходимо...
+                    </div>
+                    <div class="read-more">
+                        <div class="read-more_text">
+                            Читать дальше
+                        </div>
+                        <div class="read-more_icon">
+                            <img src="./img/read-more.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product-image">
+                    <img src="./img/dis-pro3.png" alt="Парфюмерная вода" class="image">
+                </div>
+                <div class="product-body">
+                    <div class="title">неделя моды в Москве в центральном зале пассажа </div>
+                    <div class="desc">
+                        Для того чтоб поучавствовать в показе мод, вам необходимо...
+                    </div>
+                    <div class="read-more">
+                        <div class="read-more_text">
+                            Читать дальше
+                        </div>
+                        <div class="read-more_icon">
+                            <img src="./img/read-more.png" alt="">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -778,6 +859,24 @@
             },
             1000:{
                 items:4
+            }
+        }
+    });
+
+    $('.discount-products').owlCarousel({
+        nav:true,
+        dots:true,
+        // margin:10,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:2
+            },
+            1000:{
+                items:3
             }
         }
     });

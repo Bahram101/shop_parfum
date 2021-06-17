@@ -425,10 +425,6 @@ section{
 #leader-products{
     .products{
         padding-top:25px;
-        //border-bottom:none;
-        //&:after, &:before{
-        //    content:none;
-        //}
         .product{
             .price{
                 .price-new{
@@ -512,6 +508,47 @@ section{
             height: 42px;
             width: 300px;
             box-shadow: 0 7px 10px 0px rgb(0 0 0 / 12%);
+        }
+    }
+}
+
+#our-news{
+    background: #F6F6F6;
+    .discount-products{
+        .product{
+            width:90%;
+            .product-image{
+                img{
+                    width:100%;
+                }
+            }
+            .product-body{
+                padding: 25px;
+                background: white;
+                position: relative;
+                left: 20px;
+                bottom: 100px;
+                .title{
+                    font-family: 'OpenSans SemiBold', sans-serif;
+                    font-size: 15px;
+                    text-transform: uppercase;
+                    margin-bottom: 15px;
+                    font-weight: bold;
+                }
+                .desc{
+                    margin-bottom: 30px;
+                    color:#8C8C8C;
+                }
+                .read-more{
+                    display: flex;
+                    align-items: center;
+                    .read-more_text{
+                        font-family: 'OpenSans SemiBold', sans-serif;
+                        font-size: 13px;
+                        margin-right: 20px;
+                    }
+                }
+            }
         }
     }
 }

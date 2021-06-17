@@ -546,3 +546,44 @@ section .container .all-sales a {
   -webkit-box-shadow: 0 7px 10px 0px rgba(0, 0, 0, 0.12);
           box-shadow: 0 7px 10px 0px rgba(0, 0, 0, 0.12);
 }
+
+#our-news {
+  background: #F6F6F6;
+}
+#our-news .discount-products .product {
+  width: 90%;
+}
+#our-news .discount-products .product .product-image img {
+  width: 100%;
+}
+#our-news .discount-products .product .product-body {
+  padding: 25px;
+  background: white;
+  position: relative;
+  left: 20px;
+  bottom: 100px;
+}
+#our-news .discount-products .product .product-body .title {
+  font-family: "OpenSans SemiBold", sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+#our-news .discount-products .product .product-body .desc {
+  margin-bottom: 30px;
+  color: #8C8C8C;
+}
+#our-news .discount-products .product .product-body .read-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#our-news .discount-products .product .product-body .read-more .read-more_text {
+  font-family: "OpenSans SemiBold", sans-serif;
+  font-size: 13px;
+  margin-right: 20px;
+}
