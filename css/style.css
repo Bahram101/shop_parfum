@@ -9,6 +9,11 @@
 
 a {
   text-decoration: none;
+  color: black;
+}
+
+.owl-carousel .owl-item img {
+  width: unset;
 }
 
 body {
@@ -254,6 +259,7 @@ section .container .section-title {
   font-family: "Yanone Kaffeesatz", ExtraLight;
   text-transform: uppercase;
   margin-bottom: 35px;
+  padding-top: 40px;
 }
 section .container .section-title .border-b {
   padding: 0 25px;
@@ -511,10 +517,6 @@ section .container .all-sales a {
   height: 300px;
 }
 
-.owl-carousel .owl-item img {
-  width: unset;
-}
-
 #subscribe {
   background-image: url(../img/subs-back.png);
   background-repeat: no-repeat;
@@ -548,10 +550,20 @@ section .container .all-sales a {
 }
 
 #our-news {
+  padding-top: 30px;
   background: #F6F6F6;
 }
+#our-news .text-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#our-news .discount-products {
+  position: relative;
+  left: 70px;
+}
 #our-news .discount-products .product {
-  width: 90%;
+  width: 80%;
 }
 #our-news .discount-products .product .product-image img {
   width: 100%;
@@ -586,4 +598,145 @@ section .container .all-sales a {
   font-family: "OpenSans SemiBold", sans-serif;
   font-size: 13px;
   margin-right: 20px;
+}
+#our-news .discount-products .owl-nav .owl-prev {
+  background: white;
+  position: absolute;
+  left: -75px;
+  font-size: 50px;
+  width: 60px;
+  height: 60px;
+  top: 35px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+#our-news .discount-products .owl-nav .owl-prev span {
+  -webkit-transform: translate(-9px, -40px);
+          transform: translate(-9px, -40px);
+  position: absolute;
+}
+#our-news .discount-products .owl-nav .owl-next {
+  background: white;
+  position: absolute;
+  font-size: 50px;
+  width: 60px;
+  height: 60px;
+  top: 35px;
+  left: -7px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+#our-news .discount-products .owl-nav .owl-next span {
+  -webkit-transform: translate(-9px, -40px);
+          transform: translate(-9px, -40px);
+  position: absolute;
+}
+#our-news .discount-products .owl-dots {
+  position: relative;
+  bottom: 65px;
+}
+#our-news .discount-products .owl-dots .owl-dot span {
+  width: 12px;
+  height: 12px;
+  background: none;
+  border: 2px solid #C1C1C1;
+  border-radius: unset;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+#our-news .discount-products .owl-dots .active span {
+  background: #C1C1C1;
+  width: 14px;
+  height: 14px;
+  top: 1px;
+  position: relative;
+}
+#our-news .all-news {
+  position: absolute;
+  bottom: 65px;
+  background: #FF2973;
+  padding: 10px 20px;
+  right: 100px;
+  color: white;
+  z-index: 1;
+}
+
+#ceo {
+  padding-bottom: 50px;
+}
+#ceo .section-title {
+  margin-bottom: 50px;
+}
+#ceo .text p {
+  color: #B9B9B9;
+}
+#ceo .text ul {
+  position: relative;
+}
+#ceo .text ul li {
+  color: #B9B9B9;
+}
+#ceo .text ul li:before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #DE8190;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  left: 0;
+}
+
+#question {
+  background-image: url(../img/form-back.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 650px;
+  padding: 40px 0;
+}
+#question .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#question .form form {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#question .form form input {
+  width: 100%;
+  padding: 45px 10px 15px 50px;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid black;
+  outline: none;
+  color: black;
+}
+#question .form form .agree {
+  padding: 35px 0 30px 10px;
+}
+#question .form form .agree input {
+  width: 50px;
+  top: 5px;
+  position: relative;
+  margin-right: 10px;
+}
+#question .form form a {
+  background: #FF2973;
+  color: white;
+  padding: 10px 30px;
+  -webkit-box-shadow: 0px 10px 15px 2px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 10px 15px 2px rgba(0, 0, 0, 0.12);
 }

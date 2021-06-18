@@ -9,6 +9,15 @@
 
 a{
     text-decoration: none;
+    color:black;
+}
+
+
+.owl-carousel {
+    .owl-item img{
+        width: unset;
+    }
+
 }
 
 body{
@@ -226,6 +235,7 @@ header{
 }
 
 section{
+    //padding:20px 0;
     .container{
         position: relative;
         .section-title{
@@ -233,6 +243,7 @@ section{
             font-family: 'Yanone Kaffeesatz', ExtraLight;
             text-transform: uppercase;
             margin-bottom: 35px;
+            padding-top: 40px;
             .border-b{
                 padding: 0 25px;
                 border-bottom: 13px solid #fee5ea;
@@ -440,6 +451,7 @@ section{
         content:none;
     }
 }
+
 #whyWeAre{
     .whyWeAre-top{
         height:310px;
@@ -469,14 +481,6 @@ section{
     .whyWeAre-bottom{
         height:300px;
     }
-}
-
-
-.owl-carousel {
-    .owl-item img{
-        width: unset;
-    }
-
 }
 
 #subscribe{
@@ -513,10 +517,16 @@ section{
 }
 
 #our-news{
+    padding-top: 30px;
     background: #F6F6F6;
+    .text-left{
+        display: flex;
+    }
     .discount-products{
+        position: relative;
+        left:70px;
         .product{
-            width:90%;
+            width:80%;
             .product-image{
                 img{
                     width:100%;
@@ -548,6 +558,139 @@ section{
                         margin-right: 20px;
                     }
                 }
+            }
+        }
+        .owl-nav{
+            .owl-prev{
+                background:white;
+                position: absolute;
+                left: -75px;
+                font-size: 50px;
+                width: 60px;
+                height: 60px;
+                top: 35px;
+                box-shadow: 0 0 10px rgb(0 0 0 / 25%);
+                span{
+                    transform: translate(-9px, -40px);
+                    position: absolute;
+                }
+            }
+
+            .owl-next{
+                background:white;
+                position: absolute;
+                font-size: 50px;
+                width: 60px;
+                height: 60px;
+                top: 35px;
+                left: -7px;
+                box-shadow: 0 0 10px rgb(0 0 0 / 25%);
+                span{
+                    transform: translate(-9px, -40px);
+                    position: absolute;
+                }
+            }
+        }
+        .owl-dots{
+            position: relative;
+            bottom:65px;
+            .owl-dot{
+                span{
+                    width:12px;
+                    height: 12px;
+                    background: none;
+                    border:2px solid #C1C1C1;
+                    border-radius:unset;
+                    transform: rotate(45deg);
+                }
+            }
+            .active{
+                span{
+                    background: #C1C1C1;
+                    width: 14px;
+                    height: 14px;
+                    top: 1px;
+                    position: relative;
+                }
+            }
+        }
+    }
+    .all-news{
+        position: absolute;
+        bottom: 65px;
+        background: #FF2973;
+        padding: 10px 20px;
+        right: 100px;
+        color: white;
+        z-index:1;
+    }
+}
+
+#ceo{
+    padding-bottom:50px;
+    .section-title{
+        margin-bottom: 50px;
+    }
+    .text{
+        p{
+            color:#B9B9B9;
+        }
+        ul{
+            position: relative;
+            li{
+                color:#B9B9B9;
+                &:before{
+                    content:"";
+                    position:absolute;
+                    width:8px;
+                    height:8px;
+                    background:#DE8190;
+                    transform:rotate(45deg);
+                    left:0;
+                }
+            }
+        }
+    }
+
+}
+
+#question{
+    background-image:url(../img/form-back.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+    height: 650px;
+    padding: 40px 0;
+    .form{
+        display: flex;
+        justify-content: center;
+        form{
+            flex-direction: column;
+            align-items:center;
+            width:400px;
+            display: flex;
+            input{
+                width: 100%;
+                padding: 45px 10px 15px 50px;
+                border: none;
+                background: transparent;
+                border-bottom: 1px solid black;
+                outline:none;
+                color:black;
+            }
+            .agree{
+                input{
+                    width:50px;
+                    top: 5px;
+                    position: relative;
+                    margin-right: 10px;
+                }
+                padding: 35px 0 30px 10px;
+            }
+            a{
+                background: #FF2973;
+                color: white;
+                padding: 10px 30px;
+                box-shadow: 0px 10px 15px 2px rgb(0 0 0 /12%)
             }
         }
     }
