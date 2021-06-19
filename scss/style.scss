@@ -640,7 +640,7 @@ section{
             li{
                 color:#B9B9B9;
                 &:before{
-                    content:"";
+                    //content:"";
                     position:absolute;
                     width:8px;
                     height:8px;
@@ -713,6 +713,10 @@ footer{
             color:white;
             text-transform: uppercase;
             font-size: 18px;
+            margin-bottom: 25px;
+        }
+        .col-item{
+            margin-bottom: 30px;
         }
     }
     .col1{
@@ -749,7 +753,11 @@ footer{
             }
         }
     }
-
+    .col4{
+        img{
+            width:100px;
+        }
+    }
     .contacts{
         p:first-child{
             color:#B6BDC9;
@@ -763,6 +771,7 @@ footer{
                 content: url(../img/phone.png);
                 position: absolute;
                 left: -30px;
+                bottom:-3px;
             }
         }
         .mail{
@@ -771,6 +780,7 @@ footer{
                 content: url(../img/mail.png);
                 position: absolute;
                 left: -30px;
+                bottom:-3px;
             }
         }
         .address{
@@ -779,6 +789,7 @@ footer{
                 content: url(../img/address.png);
                 position: absolute;
                 left: -30px;
+                bottom:-3px;
             }
         }
 
@@ -796,6 +807,7 @@ footer{
                 content: url(../img/getOrder.png);
                 position: absolute;
                 left: -30px;
+                bottom:-3px;
             }
         }
     }

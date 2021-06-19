@@ -677,7 +677,6 @@ section .container .all-sales a {
   color: #B9B9B9;
 }
 #ceo .text ul li:before {
-  content: "";
   position: absolute;
   width: 8px;
   height: 8px;
@@ -758,6 +757,10 @@ footer .col-md-3 h3 {
   color: white;
   text-transform: uppercase;
   font-size: 18px;
+  margin-bottom: 25px;
+}
+footer .col-md-3 .col-item {
+  margin-bottom: 30px;
 }
 footer .col1 {
   display: -webkit-box;
@@ -815,6 +818,9 @@ footer .col2 .social-icons .fab {
           justify-content: center;
   margin-right: 7px;
 }
+footer .col4 img {
+  width: 100px;
+}
 footer .contacts p:first-child {
   color: #B6BDC9;
 }
@@ -828,6 +834,7 @@ footer .contacts .phone:before {
   content: url(../img/phone.png);
   position: absolute;
   left: -30px;
+  bottom: -3px;
 }
 footer .contacts .mail {
   position: relative;
@@ -836,6 +843,7 @@ footer .contacts .mail:before {
   content: url(../img/mail.png);
   position: absolute;
   left: -30px;
+  bottom: -3px;
 }
 footer .contacts .address {
   position: relative;
@@ -844,6 +852,7 @@ footer .contacts .address:before {
   content: url(../img/address.png);
   position: absolute;
   left: -30px;
+  bottom: -3px;
 }
 footer .conditions p:first-child {
   color: #B6BDC9;
@@ -858,4 +867,5 @@ footer .conditions .getOrder:before {
   content: url(../img/getOrder.png);
   position: absolute;
   left: -30px;
+  bottom: -3px;
 }
