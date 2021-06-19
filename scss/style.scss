@@ -447,9 +447,12 @@ section{
 }
 
 #discount-products{
-    &:after, &:before{
-        content:none;
+    .products{
+        &:after, &:before{
+            content:none !important;
+        }
     }
+
 }
 
 #whyWeAre{
@@ -486,7 +489,6 @@ section{
 #subscribe{
     background-image:url(../img/subs-back.png);
     background-repeat:no-repeat;
-    padding: 45px 0;
     text-align: center;
     .section-title{
         font-family: 'Yanone Kaffeesatz', ExtraLight;
@@ -665,7 +667,7 @@ section{
         form{
             flex-direction: column;
             align-items:center;
-            width:400px;
+            width:450px;
             display: flex;
             .input{
                 position: relative;
@@ -705,6 +707,59 @@ section{
     }
 }
 
+#contact{
+    padding-bottom:130px;
+    h1{
+        font-weight: bold;
+        font-size: 28px;
+        text-transform: uppercase;
+        margin-bottom: 90px;
+    }
+    .col-md-3{
+        .title{
+            text-transform: uppercase;
+            font-weight: bold;
+            padding-bottom: 25px;
+            border-bottom: 3px solid #FFCED7;
+            margin-bottom: 25px;
+        }
+        .mail{
+            margin-bottom: 25px;
+            display: inline-block;
+        }
+        .socials{
+            .social{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 32%;
+                .icon-title{
+                    width: 75px;
+                    text-align: center;
+                    color: #665CAC;
+                    font-weight: bold;
+                    border-radius: 15px;
+                    font-size: 11px;
+                    padding: 4px;
+                    margin-top: 7px;
+                }
+                .viber{
+                    background: #E9E7FB;
+                }
+                .whatsapp{
+                    background:#E8FBEB;
+                    color:#4BAE50;
+                }
+                .telegram{
+                    background:#DAF3FC;
+                    color:#009CE8;
+                }
+            }
+        }
+    }
+
+}
+
 footer{
     background:#2F3133;
     padding:50px 0;
@@ -731,6 +786,14 @@ footer{
         }
         p{
             color:white;
+            span{
+                border: 1px solid white;
+                padding: 5px 2px 5px 7px;
+                text-transform: uppercase;
+                font-size: 13px;
+                font-weight: bold;
+                letter-spacing: 6px;
+            }
         }
     }
     .col2{
